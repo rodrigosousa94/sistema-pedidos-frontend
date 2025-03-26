@@ -1,0 +1,38 @@
+.container{
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 0 16px;
+    display: column;
+    flex-direction: row;
+   
+
+    h1{
+        color: var(--white);
+        text-align: center;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    gap: 16px;
+}
+
+.input{
+    border: 0;
+    height: 40px;
+    background-color: #FFF8E7;  // Bege muito claro
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0 8px;
+    color: var(--text-primary);
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:focus {
+        border-color: var(--secondary-color);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(210, 105, 30, 0.2);
+    }
+}

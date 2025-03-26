@@ -1,0 +1,34 @@
+/*.button {
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--green-900);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white);
+    transition: filter .5s;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+} */
+
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+        background-color: var(--secondary-color);
+        transform: scale(1.05);
+    }
+  }

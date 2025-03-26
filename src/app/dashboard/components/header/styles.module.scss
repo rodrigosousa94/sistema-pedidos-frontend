@@ -1,0 +1,64 @@
+.headerContainer{
+    height: 5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    border-radius: 50%;
+}
+
+.headerContent {
+    max-width: 1280px;
+    height: 5rem;
+    margin: 20px auto;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color .8s;
+            font-size: 16px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+                background-color: var(--accent-color);
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--secondary-color);
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        button {
+            border: 0;
+            background: transparent;
+            margin-left: 16px;
+            transition: transform .5s;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
